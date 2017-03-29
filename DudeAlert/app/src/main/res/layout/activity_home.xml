@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.example.hi.dudealert.Home">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What do u want to do, Avik?"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="21dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/head"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Start Rating"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:paddingTop="15dp"
+        android:textSize="21dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/start"
+        android:layout_below="@+id/head"
+        android:background="#FF4070"
+        android:onClick="startrating"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="See LeaderBoard"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:paddingTop="15dp"
+        android:textSize="21dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/leader"
+        android:layout_below="@+id/start"
+        android:background="#FF4070"
+        android:onClick="leaderboard"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Account"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:paddingTop="15dp"
+        android:textSize="21dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/account"
+        android:layout_below="@+id/leader"
+        android:background="#FF4070"
+        android:onClick="account"/>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_leader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.example.hi.dudealert.Leader">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/leaderimg"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leaderimg"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="90dp"
+                android:background="#FF4070"
+                android:textColor="#fff"
+                android:text="Rating:-"
+                android:textSize="20sp"
+                android:paddingTop="15dp"
+                android:id="@+id/rating"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="90dp"
+                android:background="#FF4070"
+                android:textColor="#fff"
+                android:text="Selected:-"
+                android:textSize="20sp"
+                android:paddingTop="15dp"
+                android:id="@+id/selected"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="90dp"
+                android:background="#FF4070"
+                android:textColor="#fff"
+                android:text="Viewed:-"
+                android:textSize="20sp"
+                android:paddingTop="15dp"
+                android:id="@+id/viewed"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
